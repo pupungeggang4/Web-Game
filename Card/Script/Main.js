@@ -7,7 +7,7 @@ function main() {
     context = canvas.getContext('2d')
 
     window.addEventListener('mouseup', mouseUp, false)
-    window.addEventListerer('keydown', keyDown, false)
+    window.addEventListener('keydown', keyDown, false)
     window.addEventListener('keyup', keyUp, false)
 
     gameFrameCurrent = Date.now()
