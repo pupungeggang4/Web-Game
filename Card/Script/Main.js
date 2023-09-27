@@ -42,8 +42,8 @@ function mouseUp(event) {
 
     if (scene === 'Title') {
         mouseUpTitle(x, y, button)
-    } else if (scene === 'Save') {
-        mouseUpSave(x, y, button)
+    } else if (scene === 'SaveSelect') {
+        mouseUpSaveSelect(x, y, button)
     } else if (scene === 'Field') {
         mouseUpField(x, y, button)
     } else if (scene === 'Game') {
@@ -56,8 +56,8 @@ function keyDown(event) {
 
     if (scene === 'Title') {
         keyDownTitle(key)
-    } else if (scene === 'Save') {
-        keyDownSave(key)
+    } else if (scene === 'SaveSelect') {
+        keyDownSaveSelect(key)
     } else if (scene === 'Field') {
         keyDownField(key)
     } else if (scene === 'Game') {
@@ -70,8 +70,8 @@ function keyUp(event) {
 
     if (scene === 'Title') {
         keyUpTitle(key)
-    } else if (scene === 'Save') {
-        keyUpSave(key)
+    } else if (scene === 'SaveSelect') {
+        keyUpSaveSelect(key)
     } else if (scene === 'Field') {
         keyUpField(key)
     } else if (scene === 'Game') {
