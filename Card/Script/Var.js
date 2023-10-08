@@ -10,3 +10,7 @@ let delta
 let scene = 'Title'
 let state = ''
 let pause = false
+
+let field = {
+    
+}
