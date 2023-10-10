@@ -11,6 +11,14 @@ let scene = 'Title'
 let state = ''
 let pause = false
 
+let input = {
+
+}
+
+let sessionVar = {
+    
+}
+
 let field = {
     
 }
