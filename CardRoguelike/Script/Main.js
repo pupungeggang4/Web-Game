@@ -7,7 +7,7 @@ function main() {
     context = canvas.getContext('2d')
 
     canvas.addEventListener('mouseup', mouseUp, false)
-    window.addEventListener('keydown', keuDown, false)
+    window.addEventListener('keydown', keyDown, false)
     window.addEventListener('keyup', keyUp, false)
 
     gameFrameCurrent = Date.now()
@@ -17,10 +17,20 @@ function main() {
 }
 
 function loop() {
+    gameFrameCurrent = Date.now()
+    delta = gameFrameCurrent - gameFramePrevious
+
     if (scene === 'Title') {
         loopTitle()
+    } else if (scene === 'Ready') {
+        loopReady()
+    } else if (scene === 'Map') {
+        loopMap()
+    } else if (scene === 'Game') {
+        loopGame()
     }
 
+    gameFramePrevious = Date.now()
     gameInstance = requestAnimationFrame(loop)
 }
 
@@ -32,6 +42,12 @@ function mouseUp(event) {
     
     if (scene === 'Title') {
         mouseUpTitle(x, y, button)
+    } else if (scene === 'Ready') {
+        mouseUpReady(x, y, button)
+    } else if (scene === 'Map') {
+        mouseUpMap(x, y, button)
+    } else if (scene === 'Game') {
+        mouseUpGame(x, y, button)
     }
 }
 
@@ -39,7 +55,13 @@ function keyUp(event) {
     let key = event.key
 
     if (scene === 'Title') {
-        mouseUpTitle(key)
+        keyUpTitle(key)
+    } else if (scene === 'Ready') {
+        keyUpReady(key)
+    } else if (scene === 'Map') {
+        keyUpMap(key)
+    } else if (scene === 'Game') {
+        keyUpGame(key)
     }
 }
 
@@ -47,7 +69,13 @@ function keyDown(event) {
     let key = event.key
 
     if (scene === 'Title') {
-        mouseUpTitle(key)
+        keyDownTitle(key)
+    } else if (scene === 'Ready') {
+        keyDownReady(key)
+    } else if (scene === 'Map') {
+        keyDownMap(key)
+    } else if (scene === 'Game') {
+        keyDownGame(key)
     }
 }
 
