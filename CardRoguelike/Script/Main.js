@@ -7,7 +7,8 @@ function main() {
     context = canvas.getContext('2d')
 
     canvas.addEventListener('mouseup', mouseUp, false)
-    window.addEventListener('keydown', keyUp, false)
+    window.addEventListener('keydown', keuDown, false)
+    window.addEventListener('keyup', keyUp, false)
 
     gameFrameCurrent = Date.now()
     gameFramePrevious = Date.now() - 16
@@ -16,15 +17,38 @@ function main() {
 }
 
 function loop() {
+    if (scene === 'Title') {
+        loopTitle()
+    }
+
     gameInstance = requestAnimationFrame(loop)
 }
 
-function mouseUp(key) {
-
+function mouseUp(event) {
+    let canvasRect = canvas.getBoundingClientRect()
+    let x = event.clientX - canvasRect.left
+    let y = event.clientY - canvasRect.top
+    let button = event.button
+    
+    if (scene === 'Title') {
+        mouseUpTitle(x, y, button)
+    }
 }
 
-function keyDown(key) {
-    
+function keyUp(event) {
+    let key = event.key
+
+    if (scene === 'Title') {
+        mouseUpTitle(key)
+    }
+}
+
+function keyDown(event) {
+    let key = event.key
+
+    if (scene === 'Title') {
+        mouseUpTitle(key)
+    }
 }
 
 function errorHandle(err, url, line, col, obj) {
