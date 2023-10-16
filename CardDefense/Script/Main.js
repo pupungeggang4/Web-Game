@@ -80,7 +80,9 @@ function keyDown(event) {
 }
 
 function errorHandle(err, url, line, col, obj) {
-    cancelAnimationFrame(gameInstance)
+    if (obj != null) {
+        cancelAnimationFrame(gameInstance)
+    }
 }
 
 function rightClick() {
