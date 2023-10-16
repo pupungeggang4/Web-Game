@@ -17,3 +17,7 @@ let player = {
     energyMax : 8,
     energyGen : 1,
 }
+
+let field = {
+    unit : [],
+}
