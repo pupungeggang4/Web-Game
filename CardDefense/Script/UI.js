@@ -8,8 +8,4 @@ let UI = {
         textStart : [168, 184],
         textErase : [168, 264],
     },
-
-    saveSelect : {
-        
-    },
 }
