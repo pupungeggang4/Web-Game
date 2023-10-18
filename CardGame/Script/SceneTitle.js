@@ -14,7 +14,20 @@ function displayTitle() {
 }
 
 function mouseUpTitle(x, y, button) {
-    
+    if (pause === false) {
+        if (button === 0) {
+            if (state === '') {
+                if (pointInsideRectArray(x, y, UI.title.buttonStart)) {
+                    scene = 'Map'
+                    state = ''
+                    game.adventure = true
+                } else if (pointInsideRectArray(x, y, UI.title.buttonCustom)) {
+                    scene = 'Custom'
+                    state = ''
+                }
+            }
+        }
+    }
 }
 
 function keyDownTitle(key) {
