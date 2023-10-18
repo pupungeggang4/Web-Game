@@ -1,10 +1,20 @@
-function drawSceneInit() {
-    context.font = '32px Opensans'
-    context.textAlign = 'left'
-    context.textBaseline = 'top'
-    context.fillStyle = 'Black'
-    context.strokeStyle = 'Black'
-    context.lineWidth = 2
+function saveInit() {
+    if (localStorage.getItem(fileName) === null) {
+        localStorage.setItem(fileName, JSON.stringify(emptySave))
+    }
 
-    context.clearRect(0, 0, 1280, 720)
+    sessionVar = JSON.parse(localStorage.getItem(fileName))
+}
+
+function saveData() {
+    localStorage.setItem(fileName, JSON.stringify(sessionVar))
+}
+
+function loadData() {
+    sessionVar = JSON.parse(localStorage.getItem(fileName))
+}
+
+function eraseData() {
+    localStorage.setItem(fileName, JSON.stringify(emptySave))
+    sessionVar = JSON.parse(localStorage.getItem(fileName))
 }

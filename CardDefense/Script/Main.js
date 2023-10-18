@@ -10,6 +10,9 @@ function main() {
     window.addEventListener('keyup', keyUp, false)
     window.addEventListener('keydown', keyDown, false)
 
+    imageLoad()
+    saveInit()
+
     gameFrameCurrent = Date.now()
     gameFramePrevious = Date.now() - 16
 
@@ -22,8 +25,6 @@ function loop() {
 
     if (scene === 'Title') {
         loopTitle()
-    } else if (scene === 'SaveSelect') {
-        loopSaveSelect()
     } else if (scene === 'Map') {
         loopMap()
     } else if (scene === 'Game') {
@@ -42,8 +43,6 @@ function mouseUp(event) {
 
     if (scene === 'Title') {
         mouseUpTitle(x, y, button)
-    } else if (scene === 'SaveSelect') {
-        mouseUpSaveSelect(x, y, button)
     } else if (scene === 'Map') {
         mouseUpMap(x, y, button)
     } else if (scene === 'Game') {
@@ -53,6 +52,10 @@ function mouseUp(event) {
 
 function keyUp(event) {
     let key = event.key
+
+    if (key === 'F11') {
+        document.documentElement.requestFullscreen()
+    }
 
     if (scene === 'Title') {
         keyUpTitle(key)
@@ -70,8 +73,6 @@ function keyDown(event) {
 
     if (scene === 'Title') {
         keyDownTitle(key)
-    } else if (scene === 'SaveSelect') {
-        keyDownSaveSelect(key)
     } else if (scene === 'Map') {
         keyDownMap(key)
     } else if (scene === 'Game') {
