@@ -17,6 +17,7 @@ function mouseUpTitle(x, y, button) {
                 if (pointInsideRectArray(x, y, UI.title.buttonStart)) {
                     scene = 'Ready'
                     state = ''
+                    selected.character = -1
                 }
             }
         }

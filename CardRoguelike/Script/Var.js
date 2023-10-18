@@ -10,6 +10,10 @@ let scene = 'Title'
 let state = ''
 let pause = false
 
+let selected = {
+    character : -1,
+}
+
 let player = {
     life : 60,
     lifeMax : 60,
