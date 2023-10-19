@@ -32,9 +32,11 @@ function mouseUpTitle(x, y, button) {
             if (state === '') {
                 if (pointInsideRectArray(x, y, UI.title.buttonStart)) {
                     scene = 'Map'
+                    scenePrevious = 'Title'
                     state = ''
                 } else if (pointInsideRectArray(x, y, UI.title.buttonCollection)) {
                     scene = 'Collection'
+                    scenePrevious = 'Title'
                     state = ''
                 } else if (pointInsideRectArray(x, y, UI.title.buttonErase)) {
                     state = 'EraseConfirm'

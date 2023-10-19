@@ -29,6 +29,8 @@ function loop() {
         loopMap()
     } else if (scene === 'Game') {
         loopGame()
+    } else if (scene === 'Collection') {
+        loopCollection()
     }
 
     gameFramePrevious = Date.now()
@@ -47,6 +49,8 @@ function mouseUp(event) {
         mouseUpMap(x, y, button)
     } else if (scene === 'Game') {
         mouseUpGame(x, y, button)
+    } else if (scene === 'Collection') {
+        mouseUpCollection(x, y, button)
     }
 }
 
@@ -65,6 +69,8 @@ function keyUp(event) {
         keyUpMap(key)
     } else if (scene === 'Game') {
         keyUpGame(key)
+    } else if (scene === 'Collection') {
+        keyUpCollection(key)
     }
 }
 

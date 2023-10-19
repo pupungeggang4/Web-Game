@@ -9,8 +9,10 @@ let delta
 let scene = 'Title'
 let state = ''
 let pause = false
+let scenePrevious = ''
 
 let sessionVar = {}
+let camera = [0, 0]
 
 let selected = {
     level : -1,

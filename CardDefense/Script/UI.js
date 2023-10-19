@@ -19,6 +19,6 @@ let UI = {
     },
 
     map : {
-
+        buttonCollection : [1040, 40, 80, 80]
     },
 }
