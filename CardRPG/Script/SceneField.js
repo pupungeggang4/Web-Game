@@ -21,11 +21,11 @@ function displayField() {
 function mouseUpField(x, y, button) {
     if (pause === false) {
         if (button === 0) {
+            if (pointInsideRectArray(x, y, UI.buttonBack)) {
+                pause = true
+            }
+            
             if (state === '') {
-                if (pointInsideRectArray(x, y, UI.buttonBack)) {
-                    pause = true
-                    
-                }
             }
         }
     } else if (pause === true) {

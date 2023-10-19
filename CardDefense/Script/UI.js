@@ -21,4 +21,19 @@ let UI = {
     map : {
         buttonCollection : [1040, 40, 80, 80]
     },
+
+    game : {
+
+    },
+
+    pause : {
+        rect : [320, 320, 640, 320],
+        textPause : [328, 344],
+        buttonResume : [320, 400, 640, 80],
+        textResume : [328, 424],
+        buttonMap : [320, 480, 640, 80],
+        textMap : [328, 504],
+        buttonTitle : [320, 560, 640, 80],
+        textTitle : [328, 584],
+    },
 }

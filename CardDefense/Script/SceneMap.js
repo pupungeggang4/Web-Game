@@ -28,8 +28,10 @@ function mouseUpMap(x, y, button) {
 
                 for (let i = 1; i < 4; i++) {
                     if (pointInsideRect(x, y, dataLevel[i]['Position'][0] - camera[0], dataLevel[i]['Position'][1] - camera[1], 80, 80)) {
-                        scene = 'Game'
-                        state = 'Start'
+                        if (sessionVar.levelStatus[i] != 0) {
+                            scene = 'Game'
+                            state = 'Start'
+                        }
                     }
                 }
             }
