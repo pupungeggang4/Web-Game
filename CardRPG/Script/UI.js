@@ -17,4 +17,17 @@ let UI = {
         buttonYes : [960, 480, 160, 80],
         textYes : [968, 504],
     },
+
+    field : {
+
+    },
+
+    pause : {
+        rect : [320, 320, 640, 240],
+        textPause : [328, 344],
+        buttonResume : [320, 400, 640, 80],
+        textResume : [328, 424],
+        buttonExit : [320, 480, 640, 80],
+        textExit : [328, 504],
+    },
 }
