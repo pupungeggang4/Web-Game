@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Card Game</title>
+        <title>2D Platformer</title>
         <style>
             #Screen {
                 border : 2px solid black;
                 position : absolute;
-                left : 50%;
-                top : 50%;
-                transform : translate(-50%, -50%);
+                left : 4px;
+                top : 4px;
             }
 
             @font-face {
@@ -18,21 +17,20 @@
         </style>
     </head>
     <body>
-        <a href="/index.html">back</a>
         <canvas id="Screen" width="1280" height="720"></canvas>
         <script src="Script/Asset.js"></script>
         <script src="Script/UI.js"></script>
+        <script src="Script/DataField.js"></script>
         <script src="Script/Const.js"></script>
         <script src="Script/Var.js"></script>
 
         <script src="Script/FunctionPhysics.js"></script>
-        <script src="Script/FunctionDraw.js"></script>
+        <script src="Script/FunctionSave.js"></script>
         <script src="Script/FunctionGame.js"></script>
+        <script src="Script/FunctionDraw.js"></script>
 
         <script src="Script/SceneTitle.js"></script>
-        <script src="Script/SceneMap.js"></script>
-        <script src="Script/SceneGame.js"></script>
-        <script src="Script/SceneCustom.js"></script>
+        <script src="Script/SceneField.js"></script>
 
         <script src="Script/Main.js"></script>
     </body>
