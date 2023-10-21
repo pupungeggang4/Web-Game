@@ -48,6 +48,10 @@ function mouseUp(event) {
         mouseUpMap(x, y, button)
     } else if (scene === 'Game') {
         mouseUpGame(x, y, button)
+    } else if (scene === 'Event') {
+        mouseUpEvent(x, y, button)
+    } else if (scene === 'Shop') {
+        mouseUpShop(x, y, button)
     }
 }
 
@@ -62,6 +66,10 @@ function keyUp(event) {
         keyUpMap(key)
     } else if (scene === 'Game') {
         keyUpGame(key)
+    } else if (scene === 'Event') {
+        keyUpEvent(key)
+    } else if (scene === 'Shop') {
+        keyUpShop(key)
     }
 }
 
@@ -76,6 +84,10 @@ function keyDown(event) {
         keyDownMap(key)
     } else if (scene === 'Game') {
         keyDownGame(key)
+    } else if (scene === 'Event') {
+        keyDownEvent(key)
+    } else if (scene === 'Shop') {
+        keyDownShop(key)
     }
 }
 

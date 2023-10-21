@@ -7,11 +7,18 @@ let gameFramePrevious
 let delta
 
 let scene = 'Title'
+let sceneNext = ''
 let state = ''
 let pause = false
 
+let animation = {
+    transition : 0,
+}
+
 let selected = {
     character : -1,
+    tileRow : -1,
+    tileColumn : -1,
 }
 
 let player = {
@@ -20,6 +27,16 @@ let player = {
     energy : 8,
     energyMax : 8,
     energyGen : 1,
+}
+
+let game = {
+    floor : 1,
+    nextColumn : 1,
+    tile : [
+        [0, 2, 3, 2, 2, 4, 2, 0],
+        [1, 2, 2, 4, 2, 2, 3, 5],
+        [0, 2, 2, 2, 2, 2, 2, 0],
+    ],
 }
 
 let field = {
