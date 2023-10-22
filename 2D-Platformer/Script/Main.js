@@ -17,6 +17,18 @@ function main() {
 }
 
 function loop() {
+    gameFrameCurrent = Date.now()
+    delta = gameFrameCurrent - gameFramePrevious
+
+    if (scene === 'Title') {
+        loopTitle()
+    } else if (scene === 'Field') {
+        loopField()
+    } else if (scene === 'Editor') {
+        loopEditor()
+    }
+
+    gameFramePrevious = Date.now()
     gameInstance = requestAnimationFrame(loop)
 }
 
