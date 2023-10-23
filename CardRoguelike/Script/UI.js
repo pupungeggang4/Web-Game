@@ -13,8 +13,18 @@ let UI = {
             [80, 400, 160, 160], [320, 400, 160, 160], [560, 400, 160, 160]
         ],
 
-        buttonStart : [1040, 560, 160, 80],
-        textStart : [1048, 584],
+        description : {
+            rect : [920, 160, 320, 400],
+            iconLife : [920, 400],
+            textLife : [968, 404],
+            iconEnergy : [],
+            iconAttack : [],
+            iconSorcery : [],
+            iconHardness : [],
+        },
+
+        buttonStart : [920, 560, 320, 80],
+        textStart : [928, 584],
     },
 
     map : {

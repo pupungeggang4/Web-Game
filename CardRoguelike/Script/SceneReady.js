@@ -9,6 +9,7 @@ function displayReady() {
     context.strokeRect(UI.buttonBack[0], UI.buttonBack[1], UI.buttonBack[2], UI.buttonBack[3])
 
     drawCharacterSelect()
+    drawDescription()
 
     context.strokeRect(UI.ready.buttonStart[0], UI.ready.buttonStart[1], UI.ready.buttonStart[2], UI.ready.buttonStart[3])
     context.fillText(`Start`, UI.ready.textStart[0], UI.ready.textStart[1])

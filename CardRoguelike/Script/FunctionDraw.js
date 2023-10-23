@@ -21,6 +21,10 @@ function drawCharacterSelect() {
     context.strokeStyle = 'Black'
 }
 
+function drawDescription() {
+    context.strokeRect(UI.ready.description.rect[0], UI.ready.description.rect[1], UI.ready.description.rect[2], UI.ready.description.rect[3])
+}
+
 function drawTile() {
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 8; j++) {
