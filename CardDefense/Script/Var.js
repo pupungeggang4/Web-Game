@@ -14,6 +14,10 @@ let scenePrevious = ''
 let sessionVar = {}
 let camera = [0, 0]
 
+let animation = {
+
+}
+
 let selected = {
     level : -1,
 }
@@ -27,6 +31,10 @@ let player = {
     deckCurrent : [],
     equipment : [],
     life : 0,
+}
+
+let UIVar = {
+    deckScroll : 0,
 }
 
 let game = {

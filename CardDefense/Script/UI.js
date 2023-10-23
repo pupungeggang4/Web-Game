@@ -23,17 +23,26 @@ let UI = {
     },
 
     game : {
-
+        start : {
+            rect : [160, 80, 960, 560],
+            textTitle : [168, 88],
+            deck : [800, 80, 320, 480],
+            deckCardList : [320, 40],
+            deckCardName : [8, 4],
+            deckCardNum : [240, 4],
+            buttonStart : [800, 560, 320, 80],
+            textStart : [808, 584],
+        },
     },
 
     pause : {
-        rect : [320, 320, 640, 320],
-        textPause : [328, 344],
-        buttonResume : [320, 400, 640, 80],
-        textResume : [328, 424],
-        buttonMap : [320, 480, 640, 80],
-        textMap : [328, 504],
-        buttonTitle : [320, 560, 640, 80],
-        textTitle : [328, 584],
+        rect : [320, 160, 640, 320],
+        textPause : [328, 184],
+        buttonResume : [320, 240, 640, 80],
+        textResume : [328, 264],
+        buttonMap : [320, 320, 640, 80],
+        textMap : [328, 344],
+        buttonTitle : [320, 400, 640, 80],
+        textTitle : [328, 424],
     },
 }

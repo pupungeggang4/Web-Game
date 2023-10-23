@@ -49,3 +49,16 @@ function drawPause() {
     context.strokeRect(UI.pause.buttonTitle[0], UI.pause.buttonTitle[1], UI.pause.buttonTitle[2], UI.pause.buttonTitle[3])
     context.fillText(`Exit to Title`, UI.pause.textTitle[0], UI.pause.textTitle[1])
 }
+
+function drawStart() {
+    context.fillStyle = 'White'
+    context.fillRect(UI.game.start.rect[0], UI.game.start.rect[1], UI.game.start.rect[2], UI.game.start.rect[3]) 
+    context.fillStyle = 'Black'
+    context.strokeRect(UI.game.start.rect[0], UI.game.start.rect[1], UI.game.start.rect[2], UI.game.start.rect[3])
+
+    context.fillText(`Build your deck.`, UI.game.start.textTitle[0], UI.game.start.textTitle[1])
+
+    context.strokeRect(UI.game.start.deck[0], UI.game.start.deck[1], UI.game.start.deck[2], UI.game.start.deck[3])
+    context.strokeRect(UI.game.start.buttonStart[0], UI.game.start.buttonStart[1], UI.game.start.buttonStart[2], UI.game.start.buttonStart[3])
+    context.fillText(`Start Game`, UI.game.start.textStart[0], UI.game.start.textStart[1])
+}

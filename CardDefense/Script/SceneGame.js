@@ -7,6 +7,10 @@ function displayGame() {
 
     context.strokeRect(UI.buttonBack[0], UI.buttonBack[1], UI.buttonBack[2], UI.buttonBack[3])
 
+    if (state === 'Start') {
+        drawStart()
+    }
+
     if (pause === true) {
         drawPause()
     }
