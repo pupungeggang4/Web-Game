@@ -27,6 +27,10 @@ let player = {
     energy : 8,
     energyMax : 8,
     energyGen : 1,
+
+    attack : 0,
+    sorcery : 0,
+    hardness : 0,
 }
 
 let game = {
