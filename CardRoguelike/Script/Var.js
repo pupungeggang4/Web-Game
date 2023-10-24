@@ -22,6 +22,7 @@ let selected = {
 }
 
 let player = {
+    level : 1,
     life : 60,
     lifeMax : 60,
     energy : 8,

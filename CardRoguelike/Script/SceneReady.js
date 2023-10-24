@@ -6,7 +6,7 @@ function displayReady() {
     drawSceneInit()
 
     context.fillText(`Select character.`, UI.textTitle[0], UI.textTitle[1])
-    context.strokeRect(UI.buttonBack[0], UI.buttonBack[1], UI.buttonBack[2], UI.buttonBack[3])
+    context.drawImage(img.button.back, UI.buttonBack[0], UI.buttonBack[1])
 
     drawCharacterSelect()
     drawDescription()
@@ -32,7 +32,7 @@ function mouseUpReady(x, y, button) {
 
                 if (pointInsideRectArray(x, y, UI.ready.buttonStart)) {
                     if (selected.character != -1) {
-                        gameInit()
+                        adventureInit()
                         scene = 'Map'
                         state = ''
                     }
