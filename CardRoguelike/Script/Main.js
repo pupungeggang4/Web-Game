@@ -28,6 +28,10 @@ function loop() {
         loopMap()
     } else if (scene === 'Game') {
         loopGame()
+    } else if (scene === 'Event') {
+        loopEvent()
+    } else if (scene === 'Shop') {
+        loopShop()
     }
 
     gameFramePrevious = Date.now()

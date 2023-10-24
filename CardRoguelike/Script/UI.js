@@ -15,12 +15,17 @@ let UI = {
 
         description : {
             rect : [920, 160, 320, 400],
-            iconLife : [920, 400],
-            textLife : [968, 404],
-            iconEnergy : [],
-            iconAttack : [],
-            iconSorcery : [],
-            iconHardness : [],
+            textElement : [928, 364],
+            iconLife : [920, 400, 40, 40],
+            textLife : [964, 404],
+            iconEnergy : [1000, 400, 40, 40],
+            textEnergy : [1044, 404],
+            iconAttack : [920, 440, 40, 40],
+            textAttack : [964, 444],
+            iconSorcery : [1000, 440, 40, 40],
+            textSorcery : [1044, 444],
+            iconHardness : [1080, 440, 40, 40],
+            textHardness : [1124, 444],
         },
 
         buttonStart : [920, 560, 320, 80],

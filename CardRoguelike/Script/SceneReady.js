@@ -32,6 +32,7 @@ function mouseUpReady(x, y, button) {
 
                 if (pointInsideRectArray(x, y, UI.ready.buttonStart)) {
                     if (selected.character != -1) {
+                        gameInit()
                         scene = 'Map'
                         state = ''
                     }

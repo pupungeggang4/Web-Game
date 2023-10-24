@@ -11,3 +11,7 @@ function handleTransition() {
         animation.transition -= delta / 1000
     }
 }
+
+function gameInit() {
+    
+}
