@@ -10,13 +10,18 @@ let scene = 'Title'
 let state = ''
 let pause = false
 
-let mode = ''
+let tutorial = ''
+
+let selected = {
+    row : -1,
+    column : -1,
+}
 
 let map = {
     cell : [
-        [0, 2, 3, 2, 2, 2, 3, 0],
-        [1, 2, 2, 3, 2, 2, 2, 4],
-        [0, 2, 2, 2, 2, 3, 2, 0],
+        [0, 2, 2, 2, 2, 2, 2, 0],
+        [1, 2, 2, 2, 2, 2, 2, 2],
+        [0, 2, 2, 2, 2, 2, 2, 0],
     ],
 }
 
@@ -24,9 +29,19 @@ let player = {
     life : 60,
     lifeMax : 60,
     deck : [],
+    deckCurrent : [],
 }
 
 let game = {
-    adenture : false,
-    type : '',
+    adventure : false,
+    gameType : '',
+    nextColumn : -1,
+
+    concentration : {
+        card : [
+            [null, null, null, null],
+            [null, null, null, null],
+            [null, null, null, null],
+        ],
+    }
 }

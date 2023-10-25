@@ -21,6 +21,7 @@ function mouseUpTitle(x, y, button) {
                     scene = 'Map'
                     state = ''
                     game.adventure = true
+                    adventureInit()
                 } else if (pointInsideRectArray(x, y, UI.title.buttonCustom)) {
                     scene = 'Custom'
                     state = ''
