@@ -43,5 +43,22 @@ let game = {
             [null, null, null, null],
             [null, null, null, null],
         ],
+
+        cardStatus : [
+            [0, 0, 0, 0],
+            [0, 0, 0, 0],
+            [0, 0, 0, 0]
+        ],
+
+        cardFlip : 0,
+        cardFlipped : [],
+        moveLeft : 0,
+        score : 0,
+    }
+}
+
+let animation = {
+    concentration : {
+        flip : 0,
     }
 }
