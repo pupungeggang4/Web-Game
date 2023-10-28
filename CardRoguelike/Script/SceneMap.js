@@ -35,6 +35,7 @@ function mouseUpMap(x, y, button) {
                                 if (game.tile[i][j] === 2) {
                                     sceneNext = 'Game'
                                     state = 'Transition'
+                                    gameInit()
                                 } else if (game.tile[i][j] === 3) {
                                     sceneNext = 'Event'
                                     state = 'Transition'

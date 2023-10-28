@@ -1,3 +1,3 @@
-let dataCard = {
+const dataCard = {
     
 }

@@ -22,5 +22,6 @@ function adventureInit() {
 }
 
 function gameInit() {
-    
+    field.playerPosition = [80, 80]
+    field.unit = []
 }

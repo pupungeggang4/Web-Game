@@ -5,9 +5,9 @@ function loopGame() {
 function displayGame() {
     drawSceneInit()
 
-    context.fillText(`Game`, UI.textTitle[0], UI.textTitle[1])
     context.drawImage(img.button.back, UI.buttonBack[0], UI.buttonBack[1])
 
+    drawField()
     drawGameUpper()
     drawGameLower()
 

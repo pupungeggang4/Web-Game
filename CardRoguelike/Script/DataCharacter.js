@@ -6,3 +6,12 @@ const dataCharacter = {
     4 : {'Element' : 'Light', 'Life' : 70, 'Energy' : 6, 'Attack' : 2, 'Sorcery' : 0, 'Hardness' : 2, 'StartDeck' : [1, 1, 1]},
     5 : {'Element' : 'Dark', 'Life' : 50, 'Energy' : 6, 'Attack' : 2, 'Sorcery' : 2, 'Hardness' : 0, 'StartDeck' : [1, 1, 1]},
 }
+
+const startDeck = {
+    0 : {'Deck' : [1, 1, 1, 2, 2, 2, 3, 3, 3]},
+    1 : {'Deck' : [1, 1, 1, 2, 2, 2, 3, 3, 3]},
+    2 : {'Deck' : [1, 1, 1, 2, 2, 2, 3, 3, 3]},
+    3 : {'Deck' : [1, 1, 1, 2, 2, 2, 3, 3, 3]},
+    4 : {'Deck' : [1, 1, 1, 2, 2, 2, 3, 3, 3]},
+    5 : {'Deck' : [1, 1, 1, 2, 2, 2, 3, 3, 3]},
+}

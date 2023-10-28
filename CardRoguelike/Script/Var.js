@@ -45,5 +45,6 @@ let game = {
 }
 
 let field = {
+    playerPosition : [80, 80],
     unit : [],
 }

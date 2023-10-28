@@ -58,7 +58,7 @@ function drawTile() {
 }
 
 function drawGameUpper() {
-
+    context.fillText(`Lv.${player.level}`, UI.game.upper.textLevel[0], UI.game.upper.textLevel[1])
 }
 
 function drawGameLower() {
@@ -95,6 +95,10 @@ function drawGameLower() {
 
     context.strokeRect(UI.game.lower.baseAttack[0], UI.game.lower.baseAttack[1], UI.game.lower.baseAttack[2], UI.game.lower.baseAttack[3])
     context.strokeRect(UI.game.lower.cardBack[0], UI.game.lower.cardBack[1], UI.game.lower.cardBack[2], UI.game.lower.cardBack[3])
+}
+
+function drawField() {
+    context.strokeRect(Math.floor(field.playerPosition[0] - 40), Math.floor(field.playerPosition[1] - 40), 80, 80)
 }
 
 function drawPause() {
