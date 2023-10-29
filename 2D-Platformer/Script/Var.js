@@ -10,6 +10,10 @@ let scene = 'Title'
 let state = ''
 let pause = false
 
+let sessionVar = {
+    
+}
+
 let player = {
     
 }
