@@ -26,13 +26,24 @@ let UI = {
         start : {
             rect : [160, 80, 960, 560],
             textTitle : [168, 88],
-            deck : [800, 80, 320, 480],
-            deckCardList : [320, 40],
+            card : [160, 160, 640, 400],
+            cardList : [160, 160],
+            cardSize : [80, 80],
+            deck : [800, 160, 320, 400],
+            deckCardListSize : [320, 40],
             deckCardName : [8, 4],
             deckCardNum : [240, 4],
             buttonStart : [800, 560, 320, 80],
             textStart : [808, 584],
         },
+
+        upper : {
+
+        },
+
+        lower : {
+
+        }
     },
 
     pause : {

@@ -35,6 +35,7 @@ let player = {
 
 let UIVar = {
     deckScroll : 0,
+    cardScroll : 0,
 }
 
 let game = {

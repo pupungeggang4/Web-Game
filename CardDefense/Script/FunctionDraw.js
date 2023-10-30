@@ -58,7 +58,19 @@ function drawStart() {
 
     context.fillText(`Build your deck.`, UI.game.start.textTitle[0], UI.game.start.textTitle[1])
 
+    context.strokeRect(UI.game.start.card[0], UI.game.start.card[1], UI.game.start.card[2], UI.game.start.card[3])
+
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 8; j++) {
+            context.strokeRect(UI.game.start.card[0] + UI.game.start.cardSize[0] * j, UI.game.start.card[1] + UI.game.start.cardSize[1] * i, UI.game.start.cardSize[0], UI.game.start.cardSize[1])
+        }
+    }
+
     context.strokeRect(UI.game.start.deck[0], UI.game.start.deck[1], UI.game.start.deck[2], UI.game.start.deck[3])
+
+    for (let i = 0; i < 9; i++) {
+        context.strokeRect(UI.game.start.deck[0], UI.game.start.deck[1] + UI.game.start.deckCardListSize[1] * i, UI.game.start.deckCardListSize[0], UI.game.start.deckCardListSize[1])
+    }
     context.strokeRect(UI.game.start.buttonStart[0], UI.game.start.buttonStart[1], UI.game.start.buttonStart[2], UI.game.start.buttonStart[3])
     context.fillText(`Start Game`, UI.game.start.textStart[0], UI.game.start.textStart[1])
 }
